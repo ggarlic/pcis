@@ -18,6 +18,13 @@
 		 x)))
 
 (define (cbrt x)
-  (cbrt-iter 1.0 x))
+  (if (= x 0)
+      0
+      (cbrt-iter 1.0 x)))
 
 (cbrt 27)
+(cbrt 1000)
+(cbrt -1000)
+(cbrt -0.125)
+(cbrt 0.125)
+(cbrt 0)

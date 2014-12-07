@@ -1,0 +1,10 @@
+#lang racket
+(require "exec_1.37.rkt")
+(define (e-euler k)
+  (+ 2.0 (cont-frac (lambda (i) 1)
+                    (lambda (i)
+                      (if (= 0 (remainder (+ i 1) 3))
+                        (/ (+ i 1) 1.5)
+                        1))
+                    k)))
+(e-euler 1000)

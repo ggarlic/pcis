@@ -1,5 +1,3 @@
-#lang scheme
-
 ;; racket don't have a runtime primitive
 (define (runtime) (current-inexact-milliseconds))
 

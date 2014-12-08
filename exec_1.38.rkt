@@ -7,4 +7,14 @@
                         (/ (+ i 1) 1.5)
                         1))
                     k)))
+
 (e-euler 1000)
+
+(define (e-euler-iter k)
+  (+ 2.0 (cont-frac-iter (lambda (i) 1)
+                    (lambda (i)
+                      (if (= 0 (remainder (+ i 1) 3))
+                        (/ (+ i 1) 1.5)
+                        1))
+                    k)))
+(e-euler-iter 1000)

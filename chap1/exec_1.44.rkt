@@ -1,5 +1,6 @@
 #lang racket
 (require "exec_1.43.rkt")
+(provide average)
 
 (define dx 0.0001)
 (define (average . numbers)

@@ -1,3 +1,5 @@
+#lang racket
+(provide upper-bound lower-bound make-interval)
 ; 2.7
 (define (upper-bound x)
   (let ((head (car x))
